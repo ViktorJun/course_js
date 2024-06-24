@@ -18,34 +18,52 @@
 // }
 
 // homework_4.3
-let age = prompt('Введи год рождения')
-let city = prompt('В каком городе ты живешь?')
-let sport = prompt('Твой любимый вид спорта?')
-let sport_answer = 'Круто! Хочешь стать '
-if (age === null) {
-    alert('Жаль что вы не захотели вводить свой год рождения')
-}else if (city === null) {
-    alert('Жаль что вы не захотели вводить город в котором живете')
-}else if (sport === null) {
-    alert('Жаль что вы не захотели вводить свой любимый вид спорта')
-}else {
-    if (sport === 'баскетбол') {
-        sport_answer += 'Майклом Джорданом?'
-    }else if (sport === 'футбол') {
-        sport_answer += 'Криштиану Роналдом?'
-    }else if (sport === 'волейбол') {
-        sport_answer += 'Эрвин Нгапетом?'
-    }else {
-        sport_answer = ''
-    }
-    age = 2024 - age
-    if (city === 'Киев') {
-        alert(`Тебе ${age} лет.\nТы живешь в столице Украины\n${sport_answer}`)
-    }else if (city === 'Вашингтон') {
-        alert(`Тебе ${age} лет.\nТы живешь в столице США\n${sport_answer}`)
-    }else if (city === 'Лондон') {
-        alert(`Тебе ${age} лет.\nТы живешь в столице Англии\n${sport_answer}`)
-    }else {
-        alert(`Тебе ${age} лет.\nТы живешь в городе ${city}\n${sport_answer}`)
-    }
+// let age = prompt('Введи год рождения')
+// let city = prompt('В каком городе ты живешь?')
+// let sport = prompt('Твой любимый вид спорта?')
+// let sport_answer = 'Круто! Хочешь стать '
+// if (age === null) {
+//     alert('Жаль что вы не захотели вводить свой год рождения')
+// }else if (city === null) {
+//     alert('Жаль что вы не захотели вводить город в котором живете')
+// }else if (sport === null) {
+//     alert('Жаль что вы не захотели вводить свой любимый вид спорта')
+// }else {
+//     if (sport === 'баскетбол') {
+//         sport_answer += 'Майклом Джорданом?'
+//     }else if (sport === 'футбол') {
+//         sport_answer += 'Криштиану Роналдом?'
+//     }else if (sport === 'волейбол') {
+//         sport_answer += 'Эрвин Нгапетом?'
+//     }else {
+//         sport_answer = ''
+//     }
+//     age = 2024 - age
+//     if (city === 'Киев') {
+//         alert(`Тебе ${age} лет.\nТы живешь в столице Украины\n${sport_answer}`)
+//     }else if (city === 'Вашингтон') {
+//         alert(`Тебе ${age} лет.\nТы живешь в столице США\n${sport_answer}`)
+//     }else if (city === 'Лондон') {
+//         alert(`Тебе ${age} лет.\nТы живешь в столице Англии\n${sport_answer}`)
+//     }else {
+//         alert(`Тебе ${age} лет.\nТы живешь в городе ${city}\n${sport_answer}`)
+//     }
+// }
+
+// homework_4.4
+let numOrStr = prompt('input number or string');
+console.log(numOrStr)
+
+switch (true) {
+    case numOrStr === null:
+        console.log('Ви скасували')
+        break
+    case numOrStr.trim() === '':
+        console.log('Empty String');
+        break
+    case isNaN( +numOrStr ):
+        console.log('Number is Ba_NaN')
+        break
+    default:
+        console.log('OK!')
 }
