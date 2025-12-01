@@ -1,0 +1,17 @@
+.wrapper {
+    padding: 0 160px;
+}
+
+.weather-info {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+}
+.weather-info_elements {
+    text-align: center;
+}
+button {
+    margin: 10px auto;
+    display: flex;
+}
