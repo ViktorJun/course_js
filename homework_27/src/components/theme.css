@@ -1,0 +1,14 @@
+.text.light {
+    color: white;
+}
+.text.dark {
+    color: #222529;
+}
+.background.light {
+    background: #e8e8e8;
+}
+.background.dark {
+    background: #222529;
+}
+/*    color: #222529;
+*/

@@ -1,0 +1,6 @@
+.todo-done-container {
+    opacity: 0.8;
+}.todo-done {
+     text-decoration: line-through;
+     color: green;
+ }

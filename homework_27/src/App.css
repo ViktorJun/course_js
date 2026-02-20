@@ -1,0 +1,18 @@
+/* Основные стили */
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.App.light {
+  background-color: #f2f3f4;
+  color: #000;
+}
+
+.App.dark {
+  background-color: #323234;
+  color: #fff;
+}
+
+
