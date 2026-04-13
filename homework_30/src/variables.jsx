@@ -1,0 +1,1 @@
+export const START_WIDTH_LINK = 'https://swapi.dev/api/';
